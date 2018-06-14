@@ -1,0 +1,8 @@
+{
+    "epochs":10,
+    "batch_size":1024,
+    "loss":"binary_crossentropy",
+    "optimizer":"adam",
+    "metrics":["accuracy"]
+
+}
