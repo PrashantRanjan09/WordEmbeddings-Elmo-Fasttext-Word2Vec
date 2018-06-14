@@ -12,8 +12,11 @@ To run it on your data: comment out line 32-40 and uncomment 41-53
 ### FILES:
 
 word_embeddings.py – contains all the functions for embedding and choosing which word embedding model you want to choose.
+
 config.json – you can mention all your parameters here (embedding dimension, maxlen for padding, etc)
+
 model_params.json - you can mention all your model parameters here (epochs, batch size etc.)
+
 main.py – This is the main file. Just use this file to run in terminal.
  
 You have the option of :
