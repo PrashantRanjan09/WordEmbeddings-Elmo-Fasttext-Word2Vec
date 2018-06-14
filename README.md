@@ -20,7 +20,7 @@ To run it on your data: comment out line 32-40 and uncomment 41-53
  
 You have the option of choosing the word vector model
 
-In config.json specify “option” as  0 – Word2vec, 1 – Gensim FastText, 2- Fasttext (FAIR), 3- ELMo
+In **config.json** specify “option” as  0 – Word2vec, 1 – Gensim FastText, 2- Fasttext (FAIR), 3- ELMo
 
 
 The model is very generic. You can change your model as per your requirements. 
