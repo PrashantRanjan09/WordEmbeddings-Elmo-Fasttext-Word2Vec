@@ -1,6 +1,7 @@
-# WordEmbeddings-Fasttext, FastText (Gensim) and Word2Vec
+# WordEmbeddings-ELMo, Fasttext, FastText (Gensim) and Word2Vec
 
-This implementation gives the flexibility of choosing word embeddings on your corpus. One has the option of choosing word Embeddings from FAIR fastext (https://arxiv.org/pdf/1712.09405.pdf) published in LREC from Thomas Mikolov and team. Fasttext embeddings outperformed the Glove and Word2Vec on an average by 2~2.5% on a simple Imdb sentiment classification task (Keras Dataset). 
+This implementation gives the flexibility of choosing word embeddings on your corpus. One has the option of choosing word Embeddings from ELMo (https://arxiv.org/pdf/1802.05365.pdf) - recently introduced by Allennlp and these word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. Also fastext embeddings (https://arxiv.org/pdf/1712.09405.pdf) published in LREC from Thomas Mikolov and team is available. 
+ELMo embeddings outperformed the Fastext, Glove and Word2Vec on an average by 2~2.5% on a simple Imdb sentiment classification task (Keras Dataset). 
 
 ### USAGE:
 
@@ -19,9 +20,11 @@ To run it on your data: comment out line 32-40 and uncomment 41-53
  
 You have the option of choosing the word vector model
 
-In config.json specify “option” as  0 – Word2vec, 1 – Gensim FastText, 2- Fasttext (FAIR)
+In config.json specify “option” as  0 – Word2vec, 1 – Gensim FastText, 2- Fasttext (FAIR), 3- ELMo
 
 
 The model is very generic. You can change your model as per your requirements. 
 
 Feel free to reach out in case you need any help.
+
+Special thanks to Jacob Zweig for the write up: https://towardsdatascience.com/elmo-embeddings-in-keras-with-tensorflow-hub-7eb6f0145440. Its a good 2 min read.
