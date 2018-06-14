@@ -5,6 +5,7 @@ This implementation gives the flexibility of choosing word embeddings on your co
 ### USAGE:
 
 To run it on the Imdb dataset, run:python main.py
+
 To run it on your data: comment out line 32-40 and uncomment 41-53
 
 
