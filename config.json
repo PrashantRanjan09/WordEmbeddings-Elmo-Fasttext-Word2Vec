@@ -4,7 +4,7 @@
     "max_len":200,
     "vocab_size":10000,
     "trainable_param":"False",
-    "option":0,
+    "option":3,
     "workers":3,
     "window":1
 

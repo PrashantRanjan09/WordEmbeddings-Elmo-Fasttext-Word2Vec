@@ -1,0 +1,3 @@
+gensim version = '3.4.0'
+tensorflow_hub
+tensorflow>=1.7
