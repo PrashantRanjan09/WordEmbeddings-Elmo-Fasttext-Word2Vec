@@ -24,6 +24,5 @@ You have the option of choosing the word vector model
 In config.json specify “option” as  0 – Word2vec, 1 – Gensim FastText, 2- Fasttext (FAIR)
 
 
-The model is very generic. You can change your model as per your requirements.
-
+The model is very generic. You can change your model as per your requirements. 
 Feel free to reach out in case you need any help.
