@@ -19,5 +19,6 @@ model_params.json - you can mention all your model parameters here (epochs, batc
 
 main.py – This is the main file. Just use this file to run in terminal.
  
-You have the option of :
-Choosing the word vector model - In config.json specify “option” as  0 – Word2vec, 1 – Gensim FastText, 2- Fasttext (FAIR)
+You have the option of choosing the word vector model
+
+In config.json specify “option” as  0 – Word2vec, 1 – Gensim FastText, 2- Fasttext (FAIR)
