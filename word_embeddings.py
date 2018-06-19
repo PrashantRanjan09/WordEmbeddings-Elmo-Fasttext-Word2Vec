@@ -16,7 +16,6 @@ from sklearn.metrics import accuracy_score,classification_report
 
 
 
-
 def json_to_dict(json_set):
     for k,v in json_set.items():
         if v == "True":
@@ -26,7 +25,6 @@ def json_to_dict(json_set):
         else:
             json_set[k]=v
     return json_set
-
 
 
 with open("model_params.json", "r") as f:
@@ -52,8 +50,6 @@ def load_data(vocab_size,max_len):
     (X_train,y_train),(X_test,y_test) = imdb.load_data(num_words = vocab_size,index_from = INDEX_FROM)
 
     return X_train,X_test,y_train,y_test
-
-
 
 
 def prepare_data_for_word_vectors_imdb(X_train):
@@ -87,7 +83,6 @@ def prepare_data_for_word_vectors_imdb(X_train):
     word_indexes = tokenizer.word_index
     """
     return sentences,word_to_index
-
 
 
 def prepare_data_for_word_vectors(X):
@@ -183,7 +178,6 @@ def building_word_vector_model(option,sentences,embed_dim,workers,window,y_train
 
     return model
 
-
 def padding_input(X_train,X_test,maxlen):
     """
         Pads the input upto considered max length
@@ -210,7 +204,6 @@ def ELMoEmbedding(x):
     return elmo_model(tf.squeeze(tf.cast(x, tf.string)), signature="default", as_dict=True)["default"]
 
 
-
 def classification_model(embed_dim,X_train_pad,X_test_pad,y_train,y_test,vocab_size,word_index,w2vmodel,
                          trainable_param,option):
     """
@@ -225,8 +218,6 @@ def classification_model(embed_dim,X_train_pad,X_test_pad,y_train,y_test,vocab_s
             w2vmodel = Word2Vec model
             trainable_param = {bool} whether to train the word embeddings in the Embedding layer
             option = {int} choice of word embedding
-
-
     """
 
     embedding_matrix = np.zeros((vocab_size,embed_dim))
